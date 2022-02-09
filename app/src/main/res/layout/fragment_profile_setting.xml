@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_other_lvl_primary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_grey_200"
+            android:paddingBottom="@dimen/margin_large">
+
+            <View
+                android:id="@+id/view_top_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_xx_large"
+                android:background="?attr/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/image_avatar"
+                android:layout_height="@dimen/image_avatar"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/view_top_banner"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_top_banner"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay.ItemImage"
+                app:srcCompat="@drawable/ic_avatar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.ChatApp.Headline6"
+                app:layout_constraintEnd_toEndOf="@+id/img"
+                app:layout_constraintStart_toStartOf="@+id/img"
+                app:layout_constraintTop_toBottomOf="@+id/img"
+                tools:text="Ko Ko Kyaw" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAppearance="@style/TextAppearance.ChatApp.Caption"
+                app:layout_constraintEnd_toEndOf="@+id/img"
+                app:layout_constraintStart_toStartOf="@+id/img"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                tools:text="09 500 R 200" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/background_item_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_shop">
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/tv_account"
+                    style="@style/ProfileItem"
+
+                    android:text="@string/profile_account"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_general"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_general"
+                    style="@style/ProfileItem"
+
+                    android:text="@string/profile_general"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_account"
+                    app:layout_constraintStart_toStartOf="@+id/tv_account"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_account" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_regular"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/background_item_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_one">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_statement"
+                    style="@style/ProfileItem"
+
+
+                    android:text="@string/profile_statement"
+
+                    app:layout_constraintBottom_toTopOf="@+id/tv_notification"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_notification"
+                    style="@style/ProfileItem"
+
+                    android:text="@string/profile_notification"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_chat"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_statement" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_chat"
+                    style="@style/ProfileItem"
+
+                    android:text="@string/profile_chat"
+
+                    app:layout_constraintBottom_toTopOf="@+id/tv_language"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_statement"
+                    app:layout_constraintStart_toStartOf="@+id/tv_statement"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_notification" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_language"
+                    style="@style/ProfileItem"
+                    android:text="@string/profile_language"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/tv_tutorial"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_statement"
+                    app:layout_constraintStart_toStartOf="@+id/tv_statement"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_chat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_tutorial"
+                    style="@style/ProfileItem"
+                    android:text="@string/profile_tutorial"
+
+                    app:layout_constraintBottom_toTopOf="@+id/tv_help_center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_statement"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_language" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_help_center"
+                    style="@style/ProfileItem"
+                    android:text="@string/profile_help"
+
+                    app:layout_constraintBottom_toTopOf="@+id/tv_feedback"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_statement"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tutorial" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_feedback"
+                    style="@style/ProfileItem"
+                    android:text="@string/profile_feedback"
+
+                    app:layout_constraintBottom_toTopOf="@+id/tv_about"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_statement"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_help_center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_about"
+                    style="@style/ProfileItem"
+                    android:text="@string/profile_about"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_statement"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_feedback" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_regular"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/background_item_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_two">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_logout"
+                    style="@style/ProfileItem"
+                    android:text="@string/profile_logout"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

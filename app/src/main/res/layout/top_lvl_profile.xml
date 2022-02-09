@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="64dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/item_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile_info_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_avatar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/profile_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/app_name"
+                    app:layout_constraintBottom_toTopOf="@+id/profile_info_id"
+                    app:layout_constraintStart_toEndOf="@+id/profile_info_image"
+                    app:layout_constraintTop_toTopOf="@+id/profile_info_image"
+                    tools:text="NickName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/profile_info_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/suffix_email"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_info_image"
+                    app:layout_constraintStart_toStartOf="@+id/profile_info_name"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_info_name"
+                    tools:text="User Id" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/profile_info_buy"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/title_login"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_info_id"
+                    app:layout_constraintStart_toEndOf="@+id/profile_info_id"
+                    app:layout_constraintTop_toTopOf="@+id/profile_info_id" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile_info_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_info_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/profile_info_image"
+                    app:srcCompat="@drawable/ic_back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/item_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorBackgroundFloating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_info">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_wallet"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/suffix_email"
+                    style="@style/ProfileHeaderText"
+                    app:drawableTopCompat="@drawable/ic_avatar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/item_receive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_receive"
+                    style="@style/ProfileHeaderText"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/suffix_email"
+                    app:drawableTint="@color/chat_red_50"
+                    app:drawableTopCompat="@drawable/ic_avatar"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_wallet"
+                    app:layout_constraintEnd_toStartOf="@+id/item_scan"
+                    app:layout_constraintStart_toEndOf="@+id/item_wallet"
+                    app:layout_constraintTop_toTopOf="@+id/item_wallet" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_scan"
+                    style="@style/ProfileHeaderText"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/suffix_email"
+                    app:drawableTint="@color/chat_red_50"
+                    app:drawableTopCompat="@drawable/ic_avatar"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_wallet"
+                    app:layout_constraintEnd_toStartOf="@+id/item_qr"
+                    app:layout_constraintStart_toEndOf="@+id/item_receive"
+                    app:layout_constraintTop_toTopOf="@+id/item_wallet" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_qr"
+                    style="@style/ProfileHeaderText"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/suffix_email"
+                    app:drawableTint="@color/chat_red_50"
+                    app:drawableTopCompat="@drawable/ic_avatar"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_wallet"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/item_scan"
+                    app:layout_constraintTop_toTopOf="@+id/item_wallet" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_package"
+                style="@style/ProfileItemText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_header" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_vip"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_package"
+                app:layout_constraintStart_toStartOf="@+id/item_package"
+                app:layout_constraintTop_toBottomOf="@+id/item_package" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_verified"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_vip"
+                app:layout_constraintStart_toStartOf="@+id/item_vip"
+                app:layout_constraintTop_toBottomOf="@+id/item_vip" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_security"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_verified"
+                app:layout_constraintStart_toStartOf="@+id/item_verified"
+                app:layout_constraintTop_toBottomOf="@+id/item_verified" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_album"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_security"
+                app:layout_constraintStart_toStartOf="@+id/item_security"
+                app:layout_constraintTop_toBottomOf="@+id/item_security" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_collection"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_album"
+                app:layout_constraintStart_toStartOf="@+id/item_album"
+                app:layout_constraintTop_toBottomOf="@+id/item_album" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_emoji"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_collection"
+                app:layout_constraintStart_toStartOf="@+id/item_collection"
+                app:layout_constraintTop_toBottomOf="@+id/item_collection" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_skin"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_emoji"
+                app:layout_constraintStart_toStartOf="@+id/item_emoji"
+                app:layout_constraintTop_toBottomOf="@+id/item_emoji" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_document"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_skin"
+                app:layout_constraintStart_toStartOf="@+id/item_skin"
+                app:layout_constraintTop_toBottomOf="@+id/item_skin" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_live"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_document"
+                app:layout_constraintStart_toStartOf="@+id/item_document"
+                app:layout_constraintTop_toBottomOf="@+id/item_document" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_setting"
+                style="@style/ProfileItemText"
+                android:layout_width="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/suffix_email"
+                app:drawableLeftCompat="@drawable/ic_close"
+                app:drawableRightCompat="@drawable/ic_right"
+                app:layout_constraintEnd_toEndOf="@+id/item_live"
+                app:layout_constraintStart_toStartOf="@+id/item_live"
+                app:layout_constraintTop_toBottomOf="@+id/item_live" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/background_item_status.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ic_back.xml" value="0.18611111111111112" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ic_logo.xml" value="0.22685185185185186" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ic_undraw_welcome.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ripple_effect.xml" value="0.25833333333333336" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_business_one.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_order_all.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_profile_setting.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/item_list.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/sheet_phone_no_exist.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/shimmer_placeholder_item_list.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/toolbar_top_lvl.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/toolbar_top_lvl_primary.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_chat.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_contact.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_dashboard.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_discover.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_profile.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_favourite_category.xml" value="0.1" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_password_forget.xml" value="0.1" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable-v24/logo_android.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable-v24/vd_handwriting_android_design.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_image.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_list.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_profile.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_completed.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_delivered.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_pending.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_processing.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_refunded.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_refunding.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/custom_radio_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/custom_radio_normal.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/custom_radio_selected.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_back.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_back_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_camera.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_close.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_facebook.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_folder.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_gallery.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_google.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_home.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_logo.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_otp_new.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_otp_verification.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_phone.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_phone_verify.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_profile.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_pwd_forget_otp.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_pwd_forget_phone.xml" value="0.2165" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_pwd_reset_successful.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_profile.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_profile_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_search.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_search_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_branded.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_business.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_business_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_individual.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_two_business_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_undraw_branded.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_undraw_welcome.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_upload_avatar.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_wechat.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/indicator_normal_dot.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/indicator_selected_dot.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/indicator_selector.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/launcher_icon_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/seller_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/seller_launcher_icon_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/activity_main.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_employees.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_message.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_orders.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_products.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw600dp/item_retry.xml" value="0.275" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/activity_main.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/app_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_business_info.xml" value="0.3282828282828283" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_home.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_all.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_completed.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_delivered.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_pending.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_processing.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_refund.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_otp.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_forget.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_forget_otp_validate.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_forget_phone_number.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_reset.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_reset_successful.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_profile_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_type_choose.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/item_list.xml" value="0.5" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/item_retry.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/layout_no_internet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/layout_type_radio.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/sheet_phone_no_exist.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/shimmer_placeholder_item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_other_lvl.xml" value="0.333786231884058" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_other_lvl_primary.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_top_lvl.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_top_lvl_primary.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_dashboard.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_employees.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_message.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_orders.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_products.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw320dp-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw320dp/fragment_login.xml" value="0.35597826086956524" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw720dp-land/fragment_login.xml" value="0.23560910307898258" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw720dp/fragment_login.xml" value="0.33" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-w320dp-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-w720dp-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/activity_main.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_favourite_category.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_home.xml" value="0.3546195652173913" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_login.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_password_add_new.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_password_forget.xml" value="0.36666666666666664" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_register.xml" value="0.35144927536231885" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_type_choose.xml" value="0.35144927536231885" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.ChatApp.BottomNavigationView.Surface" parent="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemIconTint">@color/bottom_nav_item</item>
+        <item name="itemTextColor">@color/bottom_nav_item</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.ChatApp.BottomNavigation</item>
+    </style>
+
+    <style name="Widget.ChatApp.BottomNavigationView" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="backgroundColor">?attr/colorSurface</item>
+        <item name="itemIconTint">@color/bottom_nav_icon</item>
+        <item name="itemTextColor">@color/bottom_nav_text</item>
+        <!--<item name="itemBackground">@color/bottom_nav_item</item>-->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.ItemImage" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/margin_medium</item>
+    </style>
+
+    <style name="ProfileItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:padding">@dimen/margin_medium</item>
+        <item name="drawableRightCompat">@drawable/ic_right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/chat_red_500</item>
+    </style>
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="ProfileHeaderText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/design_default_color_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="ProfileItemText" parent="DiscoverItemText">
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="DiscoverItemText">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

@@ -1,0 +1,190 @@
+<resources>
+    <string name="app_name">UKnow</string>
+    <string name="label_edit_photo" translatable="false">Edit Photo</string>
+
+    //dash
+    <string name="dashboard_title_total_revenue">Total Revenue</string>
+    <string name="dashboard_title_today_revenue">Today Revenue</string>
+    <string name="dashboard_title_pending">Pending Orders</string>
+    <string name="dashboard_title_processing">Processing Orders</string>
+    <string name="dashboard_title_stock">Out of Stock</string>
+    <string name="ks">Ks</string>
+
+    //profile setting
+    <string name="profile_account">Seller Account</string>
+    <string name="profile_general">General Information</string>
+    <string name="profile_statement">Account Statement</string>
+    <string name="profile_notification">Notifications</string>
+    <string name="profile_chat">Chat Settings</string>
+    <string name="profile_language">Languages</string>
+    <string name="profile_tutorial">Tutorial</string>
+    <string name="profile_help">Seller Help Center</string>
+    <string name="profile_feedback">Feedback</string>
+    <string name="profile_about">About</string>
+    <string name="profile_logout">Logout</string>
+
+    //order pager
+    <string name="order_all">All</string>
+    <string name="order_pending">Pending</string>
+    <string name="order_processing">Processing</string>
+    <string name="order_delivered">Delivered</string>
+    <string name="order_refunded">Refunded</string>
+    <string name="order_refunding">Refunding</string>
+    <string name="order_completed">Completed</string>
+
+    //shortcuts
+    <string name="seller_shortcut_short_label">Profile</string>
+    <string name="seller_shortcut_long_label">Profile Screen</string>
+    <string name="seller_shortcut_disabled_message">Disabled</string>
+
+    //bottom navigation
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="btn_nav_chat">Chats</string>
+    <string name="btn_nav_contact">Contacts</string>
+    <string name="btn_nav_group">Groups</string>
+    <string name="btn_nav_discover">Discover</string>
+    <string name="btn_nav_profile">Profile</string>
+
+    //Title
+    <string name="title_pwd_forget">Forget Password</string>
+    <string name="title_otp_verify">OTP Verification</string>
+    <string name="title_pwd_reset">Reset Password</string>
+
+    <string name="title_login">Login</string>
+    <string name="title_type">Choose your business type</string>
+    <string name="title_register">Register</string>
+    <string name="title_terms">Terms and Conditions</string>
+    <string name="title_info">Business Types</string>
+    <string name="title_profile">Profile</string>
+
+    //image
+    <string name="desc_pwd_forget">Enter the phone number associated with your account.</string>
+    <string name="desc_pwd_forget_helper">We will send you an OTP to reset your password.</string>
+    <string name="desc_otp_verification">We need to verify your identity.</string>
+    <string name="desc_otp_verification_helper">Please enter your phone number. You will receive an OTP</string>
+    <string name="desc_pwd_reset">Your identity has been verified. Set your new password.</string>
+    <string name="desc_pwd_reset_helper">If you didn\'t receive a code!</string>
+    <string name="desc_pwd_reset_successful">Password Reset Successful!</string>
+    <string name="desc_pwd_reset_successful_helper">You have successfully reset your password. Please use your new password when logging in.</string>
+    <string name="desc_register_terms">By clicking “Register”, you agree to our <font color='#F54A06'>Terms of Use</font> and <font color='#F54A06'>Privacy Policy</font></string>
+    <string name="desc_type_choose">Select Your Account Type</string>
+
+    <string name="title_phone_existed">A user with the phone number %s already exists.</string>
+
+    <string name="helper_pwd">Password at least 8</string>
+    <string name="helper_pwd_confirm">Passwords must be matched!</string>
+
+    <string name="hint_phone">Phone Number</string>
+    <string name="hint_pwd">Password</string>
+    <string name="hint_pwd_new">New Password</string>
+    <string name="hint_pwd_confirm">Confirm Password</string>
+    <string name="hint_email">Recovery Email</string>
+    <string name="hint_name">Shop Name</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_verify">Verify</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_pwd_forget">Forget Password</string>
+    <string name="btn_otp">Get Code</string>
+    <string name="btn_terms">Accept Terms and Conditions</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_resend">Resend</string>
+    <string name="hint_code">Validation Code</string>
+
+
+    <string name="business_type_1">Individual</string>
+    <string name="business_type_2">Business</string>
+    <string name="business_type_3">Branded</string>
+
+    <string name="prefix_phone">09</string>
+    <string name="suffix_email">\@gmail.com</string>
+
+    //login
+    <string name="error_login_phone">Incorrect phone number</string>
+    <string name="error_login_pwd_wrong">Incorrect password</string>
+    <string name="error_login_pwd_8">Password must be at least 8</string>
+
+    //register
+    <string name="error_register_name">Enter your shop name</string>
+    <string name="error_register_email">Enter your correct email</string>
+    <string name="error_register_phone">Enter your correct phone number</string>
+    <string name="error_register_otp">Enter the correct code</string>
+    <string name="error_register_pwd">Password must be at least 8</string>
+    <string name="error_register_pwd_confirm">Passwords do not match</string>
+
+    //display
+    <string name="snack_internet">Internet connection Active</string>
+    <string name="snack_terms">Please read and accept our Terms and Conditions</string>
+    <string name="snack_no_internet">No internet connection! Please make your connection fixed!</string>
+    <string name="snack_request_otp_success">OTP Verification Code is sending to your phone. Please Wait!!!</string>
+    <string name="snack_request_otp_fail">OTP request fail</string>
+    <string name="snack_request_otp_verify_success">Verification Success</string>
+    <string name="snack_request_otp_verify_fail">Verification Fail</string>
+    <string name="snack_request_login_success">Login Success</string>
+    <string name="snack_request_login_fail">Login Fail</string>
+    <string name="snack_request_register_success">Register Success</string>
+    <string name="snack_request_register_fail">Register Fail</string>
+    <string name="snack_request_pwd_add_success">Update Password Success</string>
+    <string name="snack_request_pwd_add_fail">Update Password Fail</string>
+    <string name="snack_type_choose">Select your account type</string>
+
+    <string name="display_camera">Camera</string>
+    <string name="display_gallery">Gallery</string>
+
+
+    <string name="dialog_login">Signing In…</string>
+    <string name="dialog_register">Registering…</string>
+    <string name="dialog_pwd_new">Updating New Password…</string>
+    <string name="dialog_get_otp">Requesting OTP From Server…</string>
+    <string name="dialog_verify_otp">Verifying OTP…</string>
+
+    <string name="caption_no_internet">No connection</string>
+    <string name="caption_no_internet_description">We couldn\'t connect to the internet. Please check your network settings and try again</string>
+    <string name="caption_try_again">Try Again</string>
+
+    <string name="title_business_info_welcome">Hello Welcome!</string>
+    <string name="description_business_info_welcome">
+        Hello darkness, my old friend\n
+        I\'ve come to talk with you again\n
+        Because a vision softly creeping\n
+        Left its seeds while I was sleeping\n
+        And the vision that was planted in my brain\n
+        Still remains within the sound of silence</string>
+
+    <string name="title_business_info_one">Individual</string>
+    <string name="description_business_info_one">
+        In restless dreams, I walked alone\n
+        Narrow streets of cobblestone\n
+        Neath the halo of a street lamp\n
+        I turned my collar to the cold and damp\n
+        When my eyes were stabbed by the flash of a neon light\n
+        That split the night and touched the sound of silence</string>
+
+    <string name="title_business_info_two">Business</string>
+    <string name="description_business_info_two">
+        And in the naked light, I saw\n
+        Ten thousand people, maybe more\n
+        People talking without speaking\n
+        People hearing without listening\n
+        People writing songs that voices never shared\n
+        And no one dared disturb the sound of silence</string>
+
+    <string name="title_business_info_three">Branded</string>
+    <string name="description_business_info_three">
+        Fools" said I, "You do not know\n
+        I\'ve come to talk with you again\n
+        Silence like a cancer grows\n
+        Hear my words that I might teach you\n
+        Take my arms that I might reach you\n
+        But my words, like silent raindrops fell and echoed in the wells of silence</string>
+    <string name="login_description">Login your account</string>
+    <string name="welcome_back">Welcome back!</string>
+
+
+</resources>

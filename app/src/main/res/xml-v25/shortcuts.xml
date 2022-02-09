@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_undraw_welcome"
+        android:shortcutDisabledMessage="@string/seller_shortcut_disabled_message"
+        android:shortcutId="NewDonutDialogFragment"
+        android:shortcutLongLabel="@string/seller_shortcut_long_label"
+        android:shortcutShortLabel="@string/seller_shortcut_short_label">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="seller://galaxy_techno.com/profile" />
+    </shortcut>
+
+</shortcuts>

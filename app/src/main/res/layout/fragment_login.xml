@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/auth_logo_size"
+        android:layout_height="@dimen/auth_logo_size"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_welcome"
+        app:layout_constraintEnd_toEndOf="@+id/tv_welcome"
+        app:layout_constraintStart_toStartOf="@+id/tv_welcome"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/logo_android" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/welcome_back"
+        android:textAppearance="@style/TextAppearance.ChatApp.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/tv_login_description"
+        app:layout_constraintEnd_toEndOf="@+id/tv_login_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_login_description"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_login_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_auth_vertical_large"
+        android:text="@string/login_description"
+        android:textAppearance="@style/TextAppearance.ChatApp.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/til_phone"
+        app:layout_constraintEnd_toEndOf="@+id/til_phone"
+        app:layout_constraintStart_toStartOf="@+id/til_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_auth_horizontal_default"
+        android:layout_marginEnd="@dimen/margin_auth_horizontal_default"
+        android:layout_marginBottom="@dimen/margin_auth_vertical_default"
+        app:layout_constraintBottom_toTopOf="@+id/til_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_description"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:prefixText="@string/prefix_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phone"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_pwd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_auth_vertical_default"
+        app:helperText="@string/helper_pwd"
+        app:layout_constraintBottom_toTopOf="@+id/btn_forget_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/til_phone"
+        app:layout_constraintStart_toStartOf="@+id/til_phone"
+        app:layout_constraintTop_toBottomOf="@+id/til_phone"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pwd"
+            android:inputType="textWebPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_auth_horizontal_small"
+        android:layout_marginEnd="@dimen/margin_auth_horizontal_small"
+        android:layout_marginBottom="@dimen/margin_auth_vertical_xx_large"
+        android:text="@string/btn_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/til_pwd"
+        app:layout_constraintStart_toEndOf="@+id/btn_register" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_login"
+        app:layout_constraintEnd_toStartOf="@+id/btn_login"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/til_pwd" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_forget_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp"
+        android:text="@string/btn_pwd_forget"
+        android:textAppearance="@style/TextAppearance.ChatApp.Caption"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/til_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/til_pwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

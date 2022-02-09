@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#121212</color>
+    <color name="white">#fafafa</color>
+
+    <!--background protection for nav-bar, varied on Q+-->
+    <color name="immersive_sys_ui">#33000000</color>
+    <color name="nav_bar">@color/immersive_sys_ui</color>
+
+    <!--Primary Colors-->
+    <color name="chat_yellow_900">#511802</color>
+    <color name="seller_yellow_800">#872903</color>
+    <color name="seller_yellow_700">#BE3A05</color>
+    <color name="seller_yellow_600">#F54A06</color>
+    <color name="seller_yellow_500">#FA7039</color>
+    <color name="seller_yellow_400">#FB8D61</color>
+    <color name="seller_yellow_300">#FCA989</color>
+    <color name="seller_yellow_200">#FDC6B0</color>
+    <color name="seller_yellow_100">#FEE3D8</color>
+    <color name="seller_yellow_50">#FFF1EC</color>
+
+    <!--Tint Colors-->
+    <color name="chat_grey_900">#111827</color>
+    <color name="chat_grey_800">#1F2937</color>
+    <color name="chat_grey_700">#374151</color>
+    <color name="chat_grey_600">#4B5563</color>
+    <color name="chat_grey_500">#6B7280</color>
+    <color name="chat_grey_400">#9CA3AF</color>
+    <color name="chat_grey_300">#D1D5DB</color>
+    <color name="chat_grey_200">#E5E7EB</color>
+    <color name="chat_grey_100">#F3F4F6</color>
+    <color name="chat_grey_50">#FAFAFA</color>
+
+    <!--Error Colors-->
+    <color name="chat_red_900">#7F1D1D</color>
+    <color name="chat_red_800">#991B1B</color>
+    <color name="chat_red_700">#B91C1C</color>
+    <color name="chat_red_600">#DC2626</color>
+    <color name="chat_red_500">#EF4444</color>
+    <color name="chat_red_400">#F87171</color>
+    <color name="chat_red_300">#FCA5A5</color>
+    <color name="chat_red_200">#FECACA</color>
+    <color name="chat_red_100">#FEE2E2</color>
+    <color name="chat_red_50">#FEF2F2</color>
+
+    <!--Items Status Colors-->
+    <color name="item_pending_background">#FEE3D8</color>
+    <color name="item_processing_background">#FEf3c7</color>
+    <color name="item_delivered_background">#dcfce7</color>
+    <color name="item_refunded_background">#FEE2e2</color>
+    <color name="item_refunding_background">#Fce7f3</color>
+    <color name="item_completed_background">#dbeafe</color>
+
+    <color name="item_pending_text">#F54a06</color>
+    <color name="item_processing_text">#d97706</color>
+    <color name="item_delivered_text">#16a34a</color>
+    <color name="item_refunded_text">#dc2626</color>
+    <color name="item_refunding_text">#db2777</color>
+    <color name="item_completed_text">#2563eb</color>
+
+
+</resources>

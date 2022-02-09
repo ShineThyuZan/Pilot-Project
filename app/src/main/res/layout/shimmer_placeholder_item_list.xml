@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:background="@drawable/background_item_list">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/place_holder_image_list"
+        android:layout_width="@dimen/image_list_item"
+        android:layout_height="@dimen/image_list_item"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/chat_grey_300"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.ItemImage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/place_holder_t1_list"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/chat_grey_300"
+        android:textAppearance="@style/TextAppearance.ChatApp.Caption"
+        android:textColor="@color/chat_grey_900"
+        app:layout_constraintBottom_toTopOf="@+id/placeholder_t2_list"
+        app:layout_constraintStart_toEndOf="@+id/place_holder_image_list"
+        app:layout_constraintTop_toTopOf="@+id/place_holder_image_list"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/placeholder_t2_list"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_grey_200"
+        android:textAppearance="@style/TextAppearance.ChatApp.Overline"
+        app:layout_constraintBottom_toTopOf="@+id/place_holder_t3_list"
+        app:layout_constraintStart_toStartOf="@+id/place_holder_t1_list"
+        app:layout_constraintTop_toBottomOf="@+id/place_holder_t1_list" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/place_holder_t3_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_grey_300"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.ChatApp.Subtitle2"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/place_holder_image_list"
+        app:layout_constraintEnd_toStartOf="@+id/place_holder_t4_list"
+        app:layout_constraintStart_toStartOf="@+id/place_holder_t1_list"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_t2_list" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/place_holder_t4_list"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_item_status"
+        android:textAppearance="@style/TextAppearance.ChatApp.Overline"
+        app:layout_constraintBottom_toBottomOf="@+id/place_holder_t3_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/place_holder_t3_list"
+        app:layout_constraintTop_toTopOf="@+id/place_holder_t3_list"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

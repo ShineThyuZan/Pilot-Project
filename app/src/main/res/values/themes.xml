@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Base theme, all common styling here-->
+    <style name="Base.ChatApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--Material shape attributes-->
+<!--        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.ChatApp.SmallComponent</item>-->
+<!--        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.ChatApp.MediumComponent</item>-->
+<!--        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.ChatApp.LargeComponent</item>-->
+
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.ChatApp.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.ChatApp.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.ChatApp.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.ChatApp.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.ChatApp.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.ChatApp.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.ChatApp.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.ChatApp.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.ChatApp.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.ChatApp.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.ChatApp.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.ChatApp.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.ChatApp.Overline</item>
+
+        <!--Platform attributes-->
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:statusBarColor">@color/immersive_sys_ui</item>
+
+        <!--Default styles-->
+        <item name="bottomNavigationStyle">@style/Widget.ChatApp.BottomNavigationView</item>
+
+    </style>
+
+    <style name="ChatAppApp" parent="Base.ChatApp"/>
+
+    <style name="ChatAppApp.Yellow">
+        <item name="colorPrimary">@color/item_completed_text</item>
+        <item name="colorPrimaryVariant">@color/chat_red_300</item>
+        <item name="colorSecondary">@color/chat_red_500</item>
+        <item name="colorSecondaryVariant">@color/chat_red_700</item>
+    </style>
+
+    <style name="Splash" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/ChatAppApp.Yellow</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+    </style>
+
+</resources>

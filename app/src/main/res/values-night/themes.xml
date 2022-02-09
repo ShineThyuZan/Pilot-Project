@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="chatYellow">
+        <item name="colorPrimary">@color/seller_yellow_600</item>
+        <item name="colorPrimaryVariant">@color/seller_yellow_800</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+
+    <style name="Splash" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/chatYellow</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //auth
+    <dimen name="auth_logo_size">120dp</dimen>
+    <dimen name="auth_image_size">160dp</dimen>
+    <dimen name="auth_type_size">96dp</dimen>
+    <dimen name="margin_auth_horizontal_default">16dp</dimen>
+    <dimen name="margin_auth_horizontal_small">8dp</dimen>
+    <dimen name="margin_auth_vertical_default">8dp</dimen>
+    <dimen name="margin_auth_vertical_small">4dp</dimen>
+    <dimen name="margin_auth_vertical_large">24dp</dimen>
+    <dimen name="margin_auth_vertical_x_large">32dp</dimen>
+    <dimen name="margin_auth_vertical_xx_large">56dp</dimen>
+
+    <dimen name="margin_default">0dp</dimen>
+    <dimen name="margin_x_small">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_regular">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_x_large">32dp</dimen>
+    <dimen name="margin_xx_large">64dp</dimen>
+
+    //list
+    <dimen name="image_list_item">48dp</dimen>
+    <dimen name="image_avatar">72dp</dimen>
+
+</resources>
