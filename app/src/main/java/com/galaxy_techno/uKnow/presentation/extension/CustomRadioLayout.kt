@@ -1,5 +1,5 @@
 /*
-package com.galaxy_techno.seller.presentation.extension
+package com.galaxy_techno.uKnow.presentation.extension
 
 import android.view.View
 import android.view.MotionEvent

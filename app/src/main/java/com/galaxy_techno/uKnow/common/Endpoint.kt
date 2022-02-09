@@ -9,7 +9,7 @@ object Endpoint {
     //API URLs
     const val API_HOST = "http://192.168.100.241:8080/"
 
-    private const val SELLER = "seller/"
+    private const val SELLER = "chat/"
     private const val TOKEN = "token/"
     private const val MASTER_DATA = "masterData/"
 
@@ -32,9 +32,9 @@ object Endpoint {
     const val VALIDATE_OTP = API_HOST + SELLER + REGISTER_PATH + "validateOTP"
 
     //AUTH
-//    seller/token/refresh
+//    chat/token/refresh
     const val REFRESH_TOKEN = API_HOST + SELLER + TOKEN + "refresh"
-    const val REGISTER = API_HOST + SELLER + REGISTER_PATH + "sellerRegister"
+    const val REGISTER = API_HOST + SELLER + REGISTER_PATH + "chatRegister"
     const val EMPLOYEE_REGISTER = API_HOST + SELLER + "doLogin"
     const val LOGIN = API_HOST + SELLER +  "doLogin"
     const val FORGET_PASSWORD = API_HOST + "forget_password"

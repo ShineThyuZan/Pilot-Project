@@ -7,7 +7,7 @@ import timber.log.Timber
 
 @GlideModule
 @HiltAndroidApp
-class SellerApp : MultiDexApplication() {
+class ChatApp : MultiDexApplication() {
     override fun onCreate() {
         super.onCreate()
         if (BuildConfig.DEBUG) Timber.plant(Timber.DebugTree())

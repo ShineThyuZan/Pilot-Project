@@ -51,31 +51,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                 Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
     }
 
-    // Create a new event for the activity.
-    /*override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // Set the layout for the content view.
-        setContentView(R.layout.main_activity)
-
-        // Set up an OnPreDrawListener to the root view.
-        val content: View = findViewById(android.R.id.content)
-        content.viewTreeObserver.addOnPreDrawListener(
-            object : ViewTreeObserver.OnPreDrawListener {
-                override fun onPreDraw(): Boolean {
-                    // Check if the initial data is ready.
-                    return if (viewModel.isReady) {
-                        // The content is ready; start drawing.
-                        content.viewTreeObserver.removeOnPreDrawListener(this)
-                        true
-                    } else {
-                        // The content is not ready; suspend.
-                        false
-                    }
-                }
-            }
-        )
-    }*/
-
     override fun observe() {
         super.observe()
         viewModel.authState.observe(this) {
@@ -93,18 +68,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         navController.graph = navGraph
         appBarConfiguration = AppBarConfiguration(navGraph)
 
-       /* navController.addOnDestinationChangedListener { _, destination, _ ->
-
-            when (destination.id) {
-
-                R.id.dest_login -> {
-                    binding.authToolbar.visibility = View.GONE
-                }
-                R.id.dest_pwd_reset_successful -> {
-                    binding.authToolbar.visibility = View.GONE
-                }
-            }
-        }*/
 
         binding.btnNavView.setupWithNavController(navController)
         appBarConfiguration = AppBarConfiguration(

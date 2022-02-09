@@ -1,9 +1,9 @@
 package com.galaxy_techno.uKnow.common
 
 object Constant {
-    const val DB_NAME = "seller_db"
-    const val DS_NAME = "seller_ds"
-    const val USER_TABLE = "seller_user_table"
+    const val DB_NAME = "chat_db"
+    const val DS_NAME = "chat_ds"
+    const val USER_TABLE = "chat_user_table"
 
     const val BUSINESS_TYPE_ONE = 1
     const val BUSINESS_TYPE_TWO = 2
