@@ -1,12 +1,8 @@
-package com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.message
+package com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.profile
 
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
-import com.galaxy_techno.uKnow.R
-import com.galaxy_techno.uKnow.databinding.TopLvlChatBinding
-import com.galaxy_techno.uKnow.databinding.TopLvlDiscoverBinding
 import com.galaxy_techno.uKnow.databinding.TopLvlProfileBinding
 import com.galaxy_techno.uKnow.presentation.base.TopFragment
 import dagger.hilt.android.AndroidEntryPoint

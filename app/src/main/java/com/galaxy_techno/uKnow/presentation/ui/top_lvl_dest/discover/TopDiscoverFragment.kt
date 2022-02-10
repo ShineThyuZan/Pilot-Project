@@ -1,4 +1,4 @@
-package com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.employees
+package com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.discover
 
 import androidx.navigation.fragment.findNavController
 import com.galaxy_techno.uKnow.R

@@ -1,9 +1,8 @@
-package com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.dashboard
+package com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.chat
 
 import android.app.Activity
 import android.content.res.Configuration
 import android.view.View
-import android.widget.ArrayAdapter
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope

@@ -9,7 +9,7 @@
     <fragment
         tools:layout="@layout/top_lvl_chat"
         android:id="@+id/dest_top_chat"
-        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.dashboard.TopChatFragment"
+        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.chat.TopChatFragment"
         android:label="@string/btn_nav_chat" >
         <action
             android:id="@+id/action_dash_to_profile"
@@ -24,19 +24,10 @@
             android:id="@+id/action_order_to_profile"
             app:destination="@id/dest_profile_setting" />
     </fragment>
-<!--    <fragment-->
-<!--        tools:layout="@layout/top_lvl_products"-->
-<!--        android:id="@+id/dest_top_product"-->
-<!--        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.products.TopProductsFragment"-->
-<!--        android:label="@string/btn_nav_group" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_product_to_profile"-->
-<!--            app:destination="@id/dest_profile_setting" />-->
-<!--    </fragment>-->
     <fragment
         tools:layout="@layout/top_lvl_discover"
         android:id="@+id/dest_top_discover"
-        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.employees.TopDiscoverFragment"
+        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.discover.TopDiscoverFragment"
         android:label="@string/btn_nav_discover" >
         <action
             android:id="@+id/action_employee_to_profile"
@@ -45,7 +36,7 @@
     <fragment
         tools:layout="@layout/top_lvl_profile"
         android:id="@+id/dest_top_profile"
-        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.message.TopProfileFragment"
+        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.profile.TopProfileFragment"
         android:label="@string/btn_nav_profile" >
         <action
             android:id="@+id/action_message_to_profile"
