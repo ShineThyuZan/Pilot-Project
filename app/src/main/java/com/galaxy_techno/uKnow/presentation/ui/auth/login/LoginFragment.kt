@@ -88,7 +88,7 @@ class LoginFragment : AuthFragment<FragmentLoginBinding>(
             }
         }
         binding.btnRegister.setOnClickListener {
-            findNavController().navigate(R.id.action_login_to_info)
+            findNavController().navigate(R.id.action_sheet_to_login)
         }
         binding.btnForgetPwd.setOnClickListener {
 
