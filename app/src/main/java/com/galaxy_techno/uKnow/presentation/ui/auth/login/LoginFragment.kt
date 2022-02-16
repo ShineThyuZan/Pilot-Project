@@ -1,6 +1,6 @@
 package com.galaxy_techno.uKnow.presentation.ui.auth.login
 
-import android.graphics.drawable.Animatable
+import android.os.Build
 import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.activityViewModels
@@ -12,17 +12,17 @@ import com.galaxy_techno.uKnow.R
 import com.galaxy_techno.uKnow.common.InternetChecker
 import com.galaxy_techno.uKnow.common.NetworkStatus
 import com.galaxy_techno.uKnow.databinding.FragmentLoginBinding
-import com.galaxy_techno.uKnow.presentation.base.AuthFragment
-import com.galaxy_techno.uKnow.presentation.ui.auth.AuthViewModel
+import com.galaxy_techno.uKnow.presentation.base.OtherLvlFragment
 import com.galaxy_techno.uKnow.presentation.extension.*
 import com.galaxy_techno.uKnow.presentation.single_activity.MainActivity
+import com.galaxy_techno.uKnow.presentation.ui.auth.AuthViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class LoginFragment : AuthFragment<FragmentLoginBinding>(
+class LoginFragment : OtherLvlFragment<FragmentLoginBinding>(
     FragmentLoginBinding::inflate
 ) {
 
@@ -32,9 +32,9 @@ class LoginFragment : AuthFragment<FragmentLoginBinding>(
 
     private val viewModel: AuthViewModel by activityViewModels()
 
-    private val animText by lazy {
-        binding.imgLogo.drawable as Animatable
-    }
+    //    private val animText by lazy {
+//        binding.imgLogo.drawable as Animatable
+//    }
     private val args: LoginFragmentArgs by navArgs()
 
     override fun initialize() {
@@ -47,30 +47,28 @@ class LoginFragment : AuthFragment<FragmentLoginBinding>(
 
         setExistedPhone()
         clearErrorOnFocus()
-        recursiveAnimation()
+        //    recursiveAnimation()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            requireActivity().window.decorView.windowInsetsController!!.hide(
+                android.view.WindowInsets.Type.statusBars()
+            )
+        }
 
         binding.etPhone.addTextChangedListener {
             binding.tilPhone.setCloseable(it)
         }
     }
-    private fun setExistedPhone(){
+
+    private fun setExistedPhone() {
         args.phoneExisted?.let {
             binding.etPhone.setText(it)
         }
     }
 
-    private fun recursiveAnimation() {
-        animText.stop()
-        animText.start()
-    }
 
     override fun setupListener() {
         super.setupListener()
-
-        binding.imgLogo.setOnClickListener {
-            recursiveAnimation()
-        }
-
         binding.btnLogin.setOnClickListener {
 
             if (validate()) {
@@ -79,18 +77,18 @@ class LoginFragment : AuthFragment<FragmentLoginBinding>(
                 } else {
                     viewModel.setLoginLoadingState(true)
 
-                    viewModel.triggerLogin(
-                        binding.etPhone.text?.trim().toString(),
-                        binding.etPwd.text?.trim().toString()
-                    )
+//                    viewModel.triggerLogin(
+//                        binding.etPhone.text?.trim().toString(),
+//                        binding.etPwd.text?.trim().toString()
+//                    )
 
                 }
             }
         }
-        binding.btnRegister.setOnClickListener {
-            findNavController().navigate(R.id.action_sheet_to_login)
-        }
-        binding.btnForgetPwd.setOnClickListener {
+//        binding.btnRegister.setOnClickListener {
+//            findNavController().navigate(R.id.action_sheet_to_login)
+//        }
+        binding.tvForgetPassword.setOnClickListener {
 
             val directions =
                 LoginFragmentDirections.actionLoginToPwdForget(
@@ -151,7 +149,7 @@ class LoginFragment : AuthFragment<FragmentLoginBinding>(
 
                         binding.btnLogin.setActive(false)
 //                        binding.btnForgetPwd.setActive(false)
-                        binding.btnRegister.setActive(false)
+                        //  binding.btnRegister.setActive(false)
                         binding.root.displaySnack(getString(R.string.snack_request_login_success))
                         delay(500L)
                         navigateToHome()
@@ -175,10 +173,10 @@ class LoginFragment : AuthFragment<FragmentLoginBinding>(
             binding.tilPhone.error = getString(R.string.error_login_phone)
             return false
         }
-        if (!binding.etPwd.isVerifiedPwd()) {
-            binding.tilPwd.error = getString(R.string.error_login_pwd_8)
-            return false
-        }
+//        if (!binding.etPwd.isVerifiedPwd()) {
+//            binding.tilPwd.error = getString(R.string.error_login_pwd_8)
+//            return false
+//        }
         return true
     }
 
@@ -187,10 +185,10 @@ class LoginFragment : AuthFragment<FragmentLoginBinding>(
             if (v == binding.etPhone && hasFocus)
                 binding.tilPhone.isErrorEnabled = !hasFocus
         }
-        binding.etPwd.setOnFocusChangeListener { v, hasFocus ->
-            if (v == binding.etPwd && hasFocus)
-                binding.tilPwd.isErrorEnabled = !hasFocus
-
-        }
+//        binding.etPwd.setOnFocusChangeListener { v, hasFocus ->
+//            if (v == binding.etPwd && hasFocus)
+//                binding.tilPwd.isErrorEnabled = !hasFocus
+//
+//        }
     }
 }

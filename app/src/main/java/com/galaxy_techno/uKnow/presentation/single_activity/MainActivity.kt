@@ -64,7 +64,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         val navGraph = navController.navInflater.inflate(
             R.navigation.main_navigation
         )
-        navGraph.startDestination = if (isLoggedIn) R.id.dest_top_chat else R.id.auth_navigation
+       // navGraph.startDestination = if (isLoggedIn) R.id.dest_top_home else R.id.auth_navigation
+        navGraph.startDestination = if( isLoggedIn) R.id.auth_navigation else R.id.dest_top_home
         navController.graph = navGraph
         appBarConfiguration = AppBarConfiguration(navGraph)
 
@@ -72,10 +73,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         binding.btnNavView.setupWithNavController(navController)
         appBarConfiguration = AppBarConfiguration(
             setOf(
+                R.id.dest_top_home,
                 R.id.dest_top_chat,
-                R.id.dest_top_contact,
-                R.id.dest_top_discover,
-                R.id.dest_top_profile
+                R.id.dest_top_feeds,
+                R.id.dest_top_profile_setting
             )
         )
 

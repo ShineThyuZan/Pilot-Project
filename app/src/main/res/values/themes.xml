@@ -25,7 +25,7 @@
 
         <!--Platform attributes-->
         <item name="android:navigationBarColor">@color/nav_bar</item>
-        <item name="android:statusBarColor">@color/immersive_sys_ui</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
 
         <!--Default styles-->
         <item name="bottomNavigationStyle">@style/Widget.ChatApp.BottomNavigationView</item>
@@ -35,7 +35,7 @@
     <style name="ChatAppApp" parent="Base.ChatApp"/>
 
     <style name="ChatAppApp.Yellow">
-        <item name="colorPrimary">@color/item_completed_text</item>
+        <item name="colorPrimary">@color/item_delivered_text</item>
         <item name="colorPrimaryVariant">@color/chat_red_300</item>
         <item name="colorSecondary">@color/chat_red_500</item>
         <item name="colorSecondaryVariant">@color/chat_red_700</item>
@@ -43,7 +43,7 @@
 
     <style name="Splash" parent="Theme.SplashScreen">
         <item name="postSplashScreenTheme">@style/ChatAppApp.Yellow</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_screen</item>
     </style>
 
 </resources>

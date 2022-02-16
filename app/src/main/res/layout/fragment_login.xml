@@ -5,121 +5,373 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/img_logo"
-        android:layout_width="@dimen/auth_logo_size"
-        android:layout_height="@dimen/auth_logo_size"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_welcome"
-        app:layout_constraintEnd_toEndOf="@+id/tv_welcome"
-        app:layout_constraintStart_toStartOf="@+id/tv_welcome"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:srcCompat="@drawable/logo_android" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_welcome"
+    <!--    <androidx.appcompat.widget.AppCompatImageView-->
+    <!--        android:id="@+id/img_logo"-->
+    <!--        android:layout_width="@dimen/auth_logo_size"-->
+    <!--        android:layout_height="@dimen/auth_logo_size"-->
+    <!--        android:layout_marginBottom="24dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/tv_welcome"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/tv_welcome"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tv_welcome"-->
+    <!--        app:layout_constraintVertical_chainStyle="packed"-->
+    <!--        app:srcCompat="@drawable/logo_android" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tv_welcome"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:text="@string/welcome_back"-->
+    <!--        android:textAppearance="@style/TextAppearance.ChatApp.Headline5"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/tv_login_description"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/tv_login_description"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tv_login_description"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_chainStyle="packed" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tv_login_description"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="@dimen/margin_auth_vertical_large"-->
+    <!--        android:text="@string/login_description"-->
+    <!--        android:textAppearance="@style/TextAppearance.ChatApp.Body2"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/til_phone"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/til_phone"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/til_phone"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />-->
+
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/til_phone"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/margin_auth_horizontal_default"-->
+    <!--        android:layout_marginEnd="@dimen/margin_auth_horizontal_default"-->
+    <!--        android:layout_marginBottom="@dimen/margin_auth_vertical_default"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/til_pwd"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_login_description"-->
+    <!--        app:layout_constraintVertical_chainStyle="packed"-->
+    <!--        app:prefixText="@string/prefix_phone">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:id="@+id/et_phone"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="@string/hint_phone"-->
+    <!--            android:inputType="phone" />-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/til_pwd"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="@dimen/margin_auth_vertical_default"-->
+    <!--        app:helperText="@string/helper_pwd"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/btn_forget_pwd"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/til_phone"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/til_phone"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/til_phone"-->
+    <!--        app:passwordToggleEnabled="true">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:id="@+id/et_pwd"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="@string/hint_pwd"-->
+    <!--            android:inputType="textWebPassword" />-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_login"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/margin_auth_horizontal_small"-->
+    <!--        android:layout_marginEnd="@dimen/margin_auth_horizontal_small"-->
+    <!--        android:layout_marginBottom="@dimen/margin_auth_vertical_xx_large"-->
+    <!--        android:text="@string/btn_login"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/til_pwd"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/btn_register" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_register"-->
+    <!--        style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/btn_register"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/btn_login"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/btn_login"-->
+    <!--        app:layout_constraintHorizontal_chainStyle="packed"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/til_pwd" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/btn_forget_pwd"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="?attr/selectableItemBackground"-->
+    <!--        android:padding="8dp"-->
+    <!--        android:text="@string/btn_pwd_forget"-->
+    <!--        android:textAppearance="@style/TextAppearance.ChatApp.Caption"-->
+    <!--        android:textColor="?attr/colorPrimary"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/til_pwd"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/til_pwd" />-->
+
+
+<ImageView
+    android:id="@+id/img_logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:src="@drawable/login_bg"/>
+
+    <TextView
+        android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:text="@string/welcome_back"
-        android:textAppearance="@style/TextAppearance.ChatApp.Headline5"
-        app:layout_constraintBottom_toTopOf="@+id/tv_login_description"
-        app:layout_constraintEnd_toEndOf="@+id/tv_login_description"
-        app:layout_constraintStart_toStartOf="@+id/tv_login_description"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        android:textColor="@color/chat_grey_900"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_login_description"
+    <TextView
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_auth_vertical_large"
-        android:text="@string/login_description"
-        android:textAppearance="@style/TextAppearance.ChatApp.Body2"
-        app:layout_constraintBottom_toTopOf="@+id/til_phone"
-        app:layout_constraintEnd_toEndOf="@+id/til_phone"
-        app:layout_constraintStart_toStartOf="@+id/til_phone"
-        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_phone"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_auth_horizontal_default"
-        android:layout_marginEnd="@dimen/margin_auth_horizontal_default"
-        android:layout_marginBottom="@dimen/margin_auth_vertical_default"
-        app:layout_constraintBottom_toTopOf="@+id/til_pwd"
+        android:text="@string/login_sync"
+        android:textColor="@color/chat_grey_700"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogoutInSetting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_login_description"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:prefixText="@string/prefix_phone">
+      />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_phone"
-            android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:id="@+id/btnLogoutInSetting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:background="@drawable/bg_conor_green"
+        app:layout_constraintBottom_toTopOf="@+id/btnApple"
+        tools:layout_editor_absoluteX="21dp">
+
+
+        <TextView
+            android:id="@+id/btnLogoutInProfile"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_phone"
-            android:inputType="phone" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="8dp"
+            android:text="@string/continue_wechat"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivWeChat"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_pwd"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_auth_vertical_default"
-        app:helperText="@string/helper_pwd"
-        app:layout_constraintBottom_toTopOf="@+id/btn_forget_pwd"
-        app:layout_constraintEnd_toEndOf="@+id/til_phone"
-        app:layout_constraintStart_toStartOf="@+id/til_phone"
-        app:layout_constraintTop_toBottomOf="@+id/til_phone"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_pwd"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/ivWeChat"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_pwd"
-            android:inputType="textWebPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
+            app:layout_constraintBottom_toBottomOf="@+id/btnLogoutInProfile"
+            app:layout_constraintEnd_toStartOf="@+id/btnLogoutInProfile"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnLogoutInProfile"
+            app:srcCompat="@drawable/ic_wechat" />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_auth_horizontal_small"
-        android:layout_marginEnd="@dimen/margin_auth_horizontal_small"
-        android:layout_marginBottom="@dimen/margin_auth_vertical_xx_large"
-        android:text="@string/btn_login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/til_pwd"
-        app:layout_constraintStart_toEndOf="@+id/btn_register" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/login_bg" />
 
-    <Button
-        android:id="@+id/btn_register"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:id="@+id/btnApple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_conor_black"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginWeChat"
+   android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        tools:layout_editor_absoluteX="21dp">
+
+        <TextView
+            android:id="@+id/tvApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/continue_wechat"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivApple"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvApple"
+            app:layout_constraintEnd_toStartOf="@+id/tvApple"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvApple"
+            app:srcCompat="@drawable/ic_apple" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:id="@+id/btnLoginWeChat"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_conor_red"
+        app:layout_constraintBottom_toTopOf="@+id/tvOr"
+        tools:layout_editor_absoluteX="21dp">
+
+
+        <TextView
+            android:id="@+id/tvGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/continue_google"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivGoogle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGoogle"
+            app:layout_constraintEnd_toStartOf="@+id/tvGoogle"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvGoogle"
+            app:srcCompat="@drawable/ic_google" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:id="@+id/tvOr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_register"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_login"
-        app:layout_constraintEnd_toStartOf="@+id/btn_login"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="@+id/til_pwd" />
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="OR"
+        android:textColor="#9CA3AF"
+        app:layout_constraintBottom_toTopOf="@+id/til_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+   />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/btn_forget_pwd"
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOr"
+        app:layout_constraintEnd_toStartOf="@+id/tvOr"
+        app:layout_constraintTop_toTopOf="@+id/tvOr" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOr"
+        app:layout_constraintStart_toEndOf="@+id/tvOr"
+        app:layout_constraintTop_toTopOf="@+id/tvOr" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_auth_horizontal_default"
+            android:layout_marginEnd="@dimen/margin_auth_horizontal_default"
+            android:layout_marginBottom="@dimen/margin_auth_vertical_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintBottom_toTopOf="@+id/btn_login"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:prefixText="@string/prefix_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_phone"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="@dimen/_8sdp"
+        android:id="@+id/btn_login"
         android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_border_black"
+        android:text="@string/btn_login"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tvForgetPassword"
+        app:layout_constraintEnd_toEndOf="@+id/til_phone"
+        app:layout_constraintStart_toStartOf="@+id/til_phone" />
+
+    <TextView
+
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:padding="8dp"
         android:text="@string/btn_pwd_forget"
         android:textAppearance="@style/TextAppearance.ChatApp.Caption"
-        android:textColor="?attr/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/til_pwd"
-        app:layout_constraintTop_toBottomOf="@+id/til_pwd" />
+        android:textColor="#16A34A"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_56sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

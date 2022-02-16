@@ -89,7 +89,7 @@
     <fragment
         android:id="@+id/dest_pwd_forget"
         android:name="com.galaxy_techno.uKnow.presentation.ui.auth.pwd_forget.PwdForgetFragment"
-        android:label="@string/desc_pwd_forget"
+        android:label="@string/pwForget"
         tools:layout="@layout/fragment_password_forget">
         <action
             android:id="@+id/action_pwd_forget_to_reset"

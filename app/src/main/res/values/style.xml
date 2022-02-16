@@ -59,4 +59,13 @@
         <item name="android:focusable">true</item>
         <item name="android:gravity">center_vertical</item>
     </style>
+
+
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+    </style>
 </resources>

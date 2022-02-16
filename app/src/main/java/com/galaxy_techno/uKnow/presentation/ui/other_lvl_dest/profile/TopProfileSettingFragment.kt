@@ -12,7 +12,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ProfileSettingFragment :
+class TopProfileSettingFragment :
     OtherLvlFragment<FragmentProfileSettingBinding>(FragmentProfileSettingBinding::inflate) {
     private val viewModel: ProfileSettingViewModel by viewModels()
 
@@ -22,14 +22,14 @@ class ProfileSettingFragment :
     override fun setupView() {
         super.setupView()
         requireActivity().window.statusBarColor =
-            ContextCompat.getColor(requireContext(), R.color.seller_yellow_600)
+            ContextCompat.getColor(requireContext(), R.color.chat_green_600)
     }
 
     override fun setupListener() {
         super.setupListener()
-        binding.toolbar.backArrow.setOnClickListener {
-            findNavController().popBackStack()
-        }
+//        binding.toolbar.backArrow.setOnClickListener {
+//            findNavController().popBackStack()
+//        }
         binding.tvAccount.setOnClickListener { }
         binding.tvGeneral.setOnClickListener { }
         binding.tvStatement.setOnClickListener { }

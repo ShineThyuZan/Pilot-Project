@@ -4,7 +4,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.galaxy_techno.uKnow.R
-import com.galaxy_techno.uKnow.databinding.TopLvlContactBinding
+import com.galaxy_techno.uKnow.databinding.TopLvlHomeBinding
 import com.galaxy_techno.uKnow.presentation.base.TopFragment
 import com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.orders.tabs.OrderPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
@@ -12,19 +12,19 @@ import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
 @AndroidEntryPoint
-class TopContactFragment : TopFragment<TopLvlContactBinding>(TopLvlContactBinding::inflate) {
+class TopHomeFragment : TopFragment<TopLvlHomeBinding>(TopLvlHomeBinding::inflate) {
 
     override fun setupView() {
         super.setupView()
-       binding.toolbar.topLvlToolbar.title = getString(R.string.btn_nav_contact)
+        binding.toolbar.topLvlToolbar.title = getString(R.string.btn_nav_home)
         setupPager()
     }
 
     override fun setupListener() {
         super.setupListener()
-        binding.toolbar.menuProfile.setOnClickListener {
-            findNavController().navigate(R.id.action_order_to_profile)
-        }
+//        binding.toolbar.menuProfile.setOnClickListener {
+//            findNavController().navigate(R.id.action_order_to_profile)
+//        }
     }
 
     private fun setupPager() {

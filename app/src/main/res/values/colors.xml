@@ -9,16 +9,16 @@
     <color name="nav_bar">@color/immersive_sys_ui</color>
 
     <!--Primary Colors-->
-    <color name="chat_yellow_900">#511802</color>
-    <color name="seller_yellow_800">#872903</color>
-    <color name="seller_yellow_700">#BE3A05</color>
-    <color name="seller_yellow_600">#F54A06</color>
-    <color name="seller_yellow_500">#FA7039</color>
-    <color name="seller_yellow_400">#FB8D61</color>
-    <color name="seller_yellow_300">#FCA989</color>
-    <color name="seller_yellow_200">#FDC6B0</color>
-    <color name="seller_yellow_100">#FEE3D8</color>
-    <color name="seller_yellow_50">#FFF1EC</color>
+    <color name="chat_green_900">#22C55E</color>
+    <color name="chat_green_800">#872903</color>
+    <color name="chat_green_700">#BE3A05</color>
+    <color name="chat_green_600">#F54A06</color>
+    <color name="chat_green_500">#FA7039</color>
+    <color name="chat_green_400">#FB8D61</color>
+    <color name="chat_green_300">#FCA989</color>
+    <color name="chat_green_200">#FDC6B0</color>
+    <color name="chat_green_100">#FEE3D8</color>
+    <color name="chat_green_50">#FFF1EC</color>
 
     <!--Tint Colors-->
     <color name="chat_grey_900">#111827</color>
@@ -54,7 +54,7 @@
 
     <color name="item_pending_text">#F54a06</color>
     <color name="item_processing_text">#d97706</color>
-    <color name="item_delivered_text">#16a34a</color>
+    <color name="item_delivered_text">#22C55E</color>
     <color name="item_refunded_text">#dc2626</color>
     <color name="item_refunding_text">#db2777</color>
     <color name="item_completed_text">#2563eb</color>

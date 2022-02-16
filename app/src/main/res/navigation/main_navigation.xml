@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/dest_profile_setting">
+    app:startDestination="@id/auth_navigation">
 
     <include app:graph="@navigation/auth_navigation" />
     <fragment
@@ -11,41 +11,41 @@
         android:id="@+id/dest_top_chat"
         android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.chat.TopChatFragment"
         android:label="@string/btn_nav_chat" >
-        <action
-            android:id="@+id/action_dash_to_profile"
-            app:destination="@id/dest_profile_setting" />
+<!--        <action-->
+<!--            android:id="@+id/action_dash_to_profile"-->
+<!--            app:destination="@id/dest_profile_setting" />-->
     </fragment>
     <fragment
-        tools:layout="@layout/top_lvl_contact"
-        android:id="@+id/dest_top_contact"
-        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.orders.TopContactFragment"
-        android:label="@string/btn_nav_contact" >
-        <action
-            android:id="@+id/action_order_to_profile"
-            app:destination="@id/dest_profile_setting" />
+        tools:layout="@layout/top_lvl_home"
+        android:id="@+id/dest_top_home"
+        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.orders.TopHomeFragment"
+        android:label="@string/btn_nav_home" >
+<!--        <action-->
+<!--            android:id="@+id/action_order_to_profile"-->
+<!--            app:destination="@id/dest_profile_setting" />-->
     </fragment>
     <fragment
-        tools:layout="@layout/top_lvl_discover"
-        android:id="@+id/dest_top_discover"
-        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.discover.TopDiscoverFragment"
-        android:label="@string/btn_nav_discover" >
-        <action
-            android:id="@+id/action_employee_to_profile"
-            app:destination="@id/dest_profile_setting" />
+        tools:layout="@layout/top_lvl_feeds"
+        android:id="@+id/dest_top_feeds"
+        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.discover.TopFeedsFragment"
+        android:label="@string/btn_nav_feeds" >
+<!--        <action-->
+<!--            android:id="@+id/action_employee_to_profile"-->
+<!--            app:destination="@id/dest_profile_setting" />-->
     </fragment>
-    <fragment
-        tools:layout="@layout/top_lvl_profile"
-        android:id="@+id/dest_top_profile"
-        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.profile.TopProfileFragment"
-        android:label="@string/btn_nav_profile" >
-        <action
-            android:id="@+id/action_message_to_profile"
-            app:destination="@id/dest_profile_setting" />
-    </fragment>
+<!--    <fragment-->
+<!--        tools:layout="@layout/top_lvl_profile"-->
+<!--        android:id="@+id/dest_top_profile"-->
+<!--        android:name="com.galaxy_techno.uKnow.presentation.ui.top_lvl_dest.profile.TopProfileFragment"-->
+<!--        android:label="@string/btn_nav_setting" >-->
+<!--&lt;!&ndash;        <action&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/action_message_to_profile"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:destination="@id/dest_profile_setting" />&ndash;&gt;-->
+<!--    </fragment>-->
     <fragment
         tools:layout="@layout/fragment_profile_setting"
-        android:id="@+id/dest_profile_setting"
-        android:name="com.galaxy_techno.uKnow.presentation.ui.other_lvl_dest.profile.ProfileSettingFragment"
+        android:id="@+id/dest_top_profile_setting"
+        android:name="com.galaxy_techno.uKnow.presentation.ui.other_lvl_dest.profile.TopProfileSettingFragment"
         android:label="ProfileSettingFragment" />
 
 

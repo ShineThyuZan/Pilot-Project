@@ -6,39 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/back_arrow"
+            android:id="@+id/ivBackArrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
-            android:padding="8dp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_back" />
+            app:srcCompat="@drawable/ic_back_arrowhead" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:textColor="@color/white"
-            android:id="@+id/tv_title"
+            android:textColor="@color/black"
+            android:id="@+id/tvToolbarTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+
+            android:textAlignment="center"
             android:layout_marginEnd="16dp"
             tools:text="Other lvl toolbar title"
             android:textAppearance="@style/TextAppearance.ChatApp.Headline6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/back_arrow"
+            app:layout_constraintStart_toEndOf="@+id/ivBackArrow"
             app:layout_constraintTop_toTopOf="parent" />
 
 

@@ -81,9 +81,9 @@ class TopChatFragment : TopFragment<TopLvlChatBinding>(TopLvlChatBinding::inflat
 
     override fun setupListener() {
         super.setupListener()
-        binding.toolbar.menuProfile.setOnClickListener {
-            findNavController().navigate(R.id.action_dash_to_profile)
-        }
+//        binding.toolbar.menuProfile.setOnClickListener {
+//            findNavController().navigate(R.id.action_dash_to_profile)
+//        }
     }
 
     private fun getItemClick(position: Int) {

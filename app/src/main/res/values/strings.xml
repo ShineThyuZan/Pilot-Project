@@ -41,11 +41,12 @@
     <string name="nav_home">Home</string>
     <string name="nav_profile">Profile</string>
 
+
+    <string name="btn_nav_home">Home</string>
     <string name="btn_nav_chat">Chats</string>
-    <string name="btn_nav_contact">Contacts</string>
+    <string name="btn_nav_feeds">Feeds</string>
+    <string name="btn_nav_setting">Setting</string>
     <string name="btn_nav_group">Groups</string>
-    <string name="btn_nav_discover">Discover</string>
-    <string name="btn_nav_profile">Profile</string>
 
     //Title
     <string name="title_pwd_forget">Forget Password</string>
@@ -82,11 +83,11 @@
     <string name="hint_pwd_confirm">Confirm Password</string>
     <string name="hint_email">Recovery Email</string>
     <string name="hint_name">Shop Name</string>
-    <string name="btn_login">Login</string>
+    <string name="btn_login">Continue with phone number</string>
     <string name="btn_confirm">Confirm</string>
     <string name="btn_verify">Verify</string>
     <string name="btn_register">Register</string>
-    <string name="btn_pwd_forget">Forget Password</string>
+    <string name="btn_pwd_forget">Forget Password ?</string>
     <string name="btn_otp">Get Code</string>
     <string name="btn_terms">Accept Terms and Conditions</string>
     <string name="btn_next">Next</string>
@@ -184,7 +185,14 @@
         Take my arms that I might reach you\n
         But my words, like silent raindrops fell and echoed in the wells of silence</string>
     <string name="login_description">Login your account</string>
-    <string name="welcome_back">Welcome back!</string>
+    <string name="welcome_back">Welcome</string>
+    <string name="login_sync">Login to sync your content</string>
+    <string name="continue_wechat">Continue with Wechat</string>
+    <string name="continue_google">Continue with Google</string>
+    <string name="pwRequirement">Enter the phone number associated with your phone number</string>
+    <string name="pwForget">Forget Password</string>
+    <string name="idOrPhoneNo">ID/Phone Number</string>
+    <string name="tryAnotherWay">Try another way</string>
 
 
 </resources>
